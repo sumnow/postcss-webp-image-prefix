@@ -1,6 +1,6 @@
 {
   "name": "postcss-webp-image-prefix",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "postcss webp prefix",
   "main": "index.js",
   "scripts": {

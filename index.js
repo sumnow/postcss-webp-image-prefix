@@ -1,6 +1,9 @@
 var postcss = require('postcss');
 module.exports = postcss.plugin('postcss-webp-image-prefix', function (options) {
     return css => {
+        if (!options) {
+            options = {}
+        }
         const prefix = options.prefix || 'webp'
         const suffix = options.suffix || '?x-oss-process=image/format,webp'
         css.walkRules(rule => {
